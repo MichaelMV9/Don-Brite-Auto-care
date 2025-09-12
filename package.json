@@ -1,0 +1,17 @@
+{
+  "name": "don-brite-auto-care",
+  "version": "1.0.0",
+  "description": "A landing page for Don-Brite Auto Care dealership",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": ["auto", "dealership", "car", "repair", "workshop"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}
