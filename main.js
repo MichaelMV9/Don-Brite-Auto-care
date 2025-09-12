@@ -1,5 +1,5 @@
 // Smooth scrolling for navigation links
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function(){
     // Loading screen functionality
     const loadingScreen = document.getElementById('loading-screen');
     
