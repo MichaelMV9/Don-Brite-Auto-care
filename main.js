@@ -1,5 +1,19 @@
 // Smooth scrolling for navigation links
 document.addEventListener('DOMContentLoaded', function() {
+    // Loading screen functionality
+    const loadingScreen = document.getElementById('loading-screen');
+    
+    // Hide loading screen after page loads
+    window.addEventListener('load', function() {
+        setTimeout(() => {
+            loadingScreen.classList.add('fade-out');
+            document.body.style.overflow = 'visible';
+        }, 1500); // Show loading for 1.5 seconds minimum
+    });
+    
+    // Prevent scrolling while loading
+    document.body.style.overflow = 'hidden';
+
     // Add smooth scrolling to all links with hash
     const links = document.querySelectorAll('a[href^="#"]');
     
@@ -91,11 +105,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Add loading animation
-    document.body.style.opacity = '0';
-    window.addEventListener('load', function() {
-        document.body.style.transition = 'opacity 0.5s ease';
-        document.body.style.opacity = '1';
-    });
+    // Removed duplicate loading animation as it's now handled by loading screen
 });
 
 // Add CSS for ripple effect
